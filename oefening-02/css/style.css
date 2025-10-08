@@ -1,0 +1,91 @@
+/* body {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav, main {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: grey;
+}
+
+nav li {
+  display: flex;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+
+nav {
+    justify-content: right;    
+    align-items: center;
+}
+
+main {
+    background-color: lightgrey;
+    background-image: url("../images/achtergrond.webp");
+    background-repeat: repeat-x;
+
+    flex-basis: auto;
+}
+
+.item:nth-child(3), .item:nth-child(6){
+    background-color: rgba(139, 211, 146, 0.5);
+}
+
+.item:nth-child(3)::first-letter, .item:nth-child(6)::first-letter{
+    font-size: 200%;
+} */
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav li {
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+main {
+    background-image: url("../images/achtergrond.webp");
+    background-color: lightgray;
+
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.item {
+    flex: 1 1 50%;
+    padding: 10px;
+}
+
+.item:nth-child(3n) {
+    width: 100%;
+    background-color: rgba(139, 211, 146, 0.5);
+    padding: 2rem;
+}
+
+.item:nth-child(3n):first-letter {
+    font-size: 200%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: lowercase;
+    color: grey;
+    padding: 1rem;
+}
